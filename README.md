@@ -10,9 +10,11 @@
 2. `.\run.bat`
 
 # Results on some platforms.
-| Android            | CPU | GPU           | EGL version | libdmabufheap.so | EGL Error code |
-| ------------------ | --- | ------------- | ----------- | ---------------- | -------------- |
-| 12(AOSP on Oriole) | 888 | Mali-G78 MP20 | 1.4         | ✔️               | ✔️             |
-| 9                  | 845 | Adreno 630    | 1.4         | ❌                |                |
-| 13                 | 865 | Adreno 650    | 1.5         | ✔️               | 0x300C         |
-| 13                 | 888 | Mali-g78 MP10 | 1.5         | ✔️               | 0x300C         |
+| Android            | CPU   | GPU           | EGL version | libdmabufheap.so | EGL Error code |
+| ------------------ | ----- | ------------- | ----------- | ---------------- | -------------- |
+| 12(AOSP on Oriole) | 888   | Mali-G78 MP20 | 1.4         | ✔️               | ✔️             |
+| 9                  | 845   | Adreno 630    | 1.4         | ❌                |                |
+| 13                 | 865   | Adreno 650    | 1.5         | ✔️               | 0x300C         |
+| 13                 | 888   | Mali-g78 MP10 | 1.5         | ✔️               | 0x300C         |
+| 13                 | 8Gen1 | 730           | 1.5         | ✔️               | 0x300C         |
+| 14                 | 8Gen3 | 750           | 1.5         | ✔️               | 0x300C         |

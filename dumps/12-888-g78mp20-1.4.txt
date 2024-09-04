@@ -1,0 +1,1594 @@
+Build configuration: [sf PRESENT_TIME_OFFSET=0 FORCE_HWC_FOR_RBG_TO_YUV=0 MAX_VIRT_DISPLAY_DIM=0 RUNNING_WITHOUT_SYNC_FRAMEWORK=0 NUM_FRAMEBUFFER_SURFACE_BUFFERS=3]
+
+Display identification data:
+Display 4619827677550801152 (HWC display 0): port=0 pnpId=GGL displayName="Common Panel"
+
+Wide-Color information:
+Device has wide color built-in display: 1
+Device uses color management: 1
+DisplayColorSetting: Enhanced
+Display 4619827677550801152 color modes:
+    ColorMode::NATIVE (0)
+    ColorMode::SRGB (7)
+    ColorMode::DISPLAY_P3 (9)
+    Current color mode: ColorMode::DISPLAY_P3 (9)
+
+Sync configuration: [using: EGL_ANDROID_native_fence_sync EGL_KHR_wait_sync]
+
+Scheduler:
++  Touch timer: 200 ms
++  Content detection: on LayerHistory{size=92, active=2}
+
+Frame Rate Overrides (backdoor): {}
+Frame Rate Overrides (setFrameRate): {}
+mScreenAcquired=0 mPrimaryHWVsyncEnabled=0 mHWVsyncAvailable=0
+ScreenOff: 0d00:22:00.788
+60.00fps: 0d00:59:56.922
+90.00fps: 0d00:18:25.890
+
+           app phase:      6233333 ns	         SF phase:       611111 ns
+           app duration:  16600000 ns	         SF duration:  10500000 ns
+     early app phase:       133333 ns	   early SF phase:     -5488889 ns
+     early app duration:  16600000 ns	   early SF duration:  16600000 ns
+  GL early app phase:       133333 ns	GL early SF phase:     -5488889 ns
+  GL early app duration:  16600000 ns	GL early SF duration:  16600000 ns
+       HWC min duration:         0 ns
+      present offset:         0 ns	     VSYNC period:  11111111 ns
+
+(mode override by backdoor: no)
+
+app: state=Idle VSyncState={displayId=4619827677550801152, count=44618, synthetic}
+  pending events (count=0):
+  connections (count=17):
+    Connection{0xb400006f8e46e050, VSyncRequest::None}
+    Connection{0xb400006f8e4702d0, VSyncRequest::None}
+    Connection{0xb400006f8e474a10, VSyncRequest::None}
+    Connection{0xb400006f8e474590, VSyncRequest::None}
+    Connection{0xb400006f8e473f90, VSyncRequest::None}
+    Connection{0xb400006f8e473810, VSyncRequest::None}
+    Connection{0xb400006f8e473d50, VSyncRequest::None}
+    Connection{0xb400006f8e475a90, VSyncRequest::None}
+    Connection{0xb400006f8e474950, VSyncRequest::None}
+    Connection{0xb400006f8e470b10, VSyncRequest::None}
+    Connection{0xb400006f8e474710, VSyncRequest::None}
+    Connection{0xb400006f8e474650, VSyncRequest::None}
+    Connection{0xb400006f8e4717d0, VSyncRequest::None}
+    Connection{0xb400006f8e474050, VSyncRequest::None}
+    Connection{0xb400006f8e46fa90, VSyncRequest::None}
+    Connection{0xb400006f8e471710, VSyncRequest::None}
+    Connection{0xb400006f8e46c310, VSyncRequest::None}
+VSyncReactor:
+VsyncReactor in use
+Has 1 unfired fences
+mInternalIgnoreFences=0 mExternalIgnoreFences=0
+mMoreSamplesNeeded=0 mPeriodConfirmationInProgress=0
+mPeriodTransitioningTo=nullptr
+No Last HW vsync
+VSyncTracker:
+	mIdealPeriod=11.11
+	Refresh Rate Map:
+		For ideal period 16.67ms: period = 16.67ms, intercept = 0
+		For ideal period 11.11ms: period = 11.11ms, intercept = -27813
+		For ideal period 16.67ms: period = 16.67ms, intercept = 0
+VSyncDispatch:
+	Timer:
+		DebugState: Waiting
+	mTimerSlack: 0.50ms mMinVsyncDistance: 3.00ms
+	mIntendedWakeupTime: 9223365722112.00ms from now
+	mLastTimerCallback: 194437.41ms ago mLastTimerSchedule: 194437.31ms ago
+	Callbacks:
+		sf:  
+			workDuration: 16.60ms readyDuration: 0.00ms earliestVsync: -194443.20ms relative to now
+			mLastDispatchTime: 194432.11ms ago
+		appSf:  
+			workDuration: 11.11ms readyDuration: 16.60ms earliestVsync: -194409.91ms relative to now
+			mLastDispatchTime: 194409.91ms ago
+		app:  
+			workDuration: 16.60ms readyDuration: 10.50ms earliestVsync: -194643.11ms relative to now
+			mLastDispatchTime: 194643.11ms ago
+mHWCVsyncPendingState=Disable mLastHWCVsyncState=Disable
+
+Static screen stats:
+  < 1 frames: 88.158 s (1.9%)
+  < 2 frames: 95.652 s (2.0%)
+  < 3 frames: 13.613 s (0.3%)
+  < 4 frames: 12.813 s (0.3%)
+  < 5 frames: 11.900 s (0.3%)
+  < 6 frames: 7.058 s (0.2%)
+  < 7 frames: 4.763 s (0.1%)
+  7+ frames: 4465.286 s (95.0%)
+
+Total missed frame count: 71
+HWC missed frame count: 71
+GPU missed frame count: 13
+
+Buffering stats:
+  [Layer name] <Active time> <Two buffer> <Double buffered> <Triple buffered>
+
+Visible layers (count = 97)
+GraphicBufferProducers: 0, max 4096
+Composition layers
+* Layer 0xb40000708e73f9d0 (StatusBar#0)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+ 
+      geomBufferSize=[0 0 1080 118] geomContentCrop=[0 0 1080 118] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400006fee4d2bc0, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1080.000000 118.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: slot=62 buffer=0xb400006fae48d9f0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isOpaque=false hasProtectedContent=false isColorspaceAgnostic=true dataspace=V0_SRGB (142671872) hdr metadata types=0 colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]
+* Layer 0xb40000708e750b30 (NotificationShade#0)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+ 
+      geomBufferSize=[0 0 1080 2400] geomContentCrop=[0 0 1080 2400] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400006fee4d9f60, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1080.000000 2400.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=23 composition type=DEVICE (2) 
+      buffer: slot=63 buffer=0xb400006fae48fa90 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=V0_SRGB (142671872) hdr metadata types=0 colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]
+* Layer 0xb40000708e7950b0 (ColorFade BLAST#0)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+ 
+      geomBufferSize=[0 0 1080 2400] geomContentCrop=[0 0 1080 2400] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400006fee4d5780, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1080.000000 2400.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: slot=62 buffer=0xb400006fae491470 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isOpaque=false hasProtectedContent=false isColorspaceAgnostic=false dataspace=DISPLAY_P3 (143261696) hdr metadata types=0 colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]
+* Layer 0xb40000708e71d710 (ScreenDecorOverlay#0)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (IDENTITY)
+ 
+      geomBufferSize=[0 0 1080 124] geomContentCrop=[0 0 1080 124] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400006fee4d0960, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1080.000000 124.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: slot=60 buffer=0xb400006fae487270 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isOpaque=false hasProtectedContent=false isColorspaceAgnostic=true dataspace=V0_SRGB (142671872) hdr metadata types=0 colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]
+* Layer 0xb40000708e723230 (ScreenDecorOverlayBottom#0)
+      isSecure=false geomUsesSourceCrop=true geomBufferUsesDisplayInverseTransform=false geomLayerTransform (ROT_0) (TRANSLATE)
+    1.0000  0.0000  0.0000
+    0.0000  1.0000  2276.0000
+    0.0000  0.0000  1.0000
+ 
+      geomBufferSize=[0 0 1080 124] geomContentCrop=[0 0 1080 124] geomCrop=[0 0 -1 -1] geomBufferTransform=0 
+        Region transparentRegionHint (this=0xb400006fee4caba0, count=1)
+    [  0,   0,   0,   0]
+      geomLayerBounds=[0.000000 0.000000 1080.000000 124.000000]       shadowRadius=0.000000 
+      blend=PREMULTIPLIED (2) alpha=1.000000 backgroundBlurRadius=0 composition type=DEVICE (2) 
+      buffer: slot=62 buffer=0xb400006fae486df0 
+      sideband stream=0x0 
+      color=[0.000000 0.000000 0.000000] 
+      isOpaque=false hasProtectedContent=false isColorspaceAgnostic=true dataspace=V0_SRGB (142671872) hdr metadata types=0 colorTransform=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]
+Displays (1 entries)
++ DisplayDevice{4619827677550801152, internal, primary, "Common Panel"}
+   powerMode=Off (0)
+   activeMode={id=1, hwcId=36, width=1080, height=2400, refreshRate=90.00fps, dpiX=409.43, dpiY=411.89, group=0}
+   supportedModes=
+     {id=0, hwcId=35, width=1080, height=2400, refreshRate=60.00fps, dpiX=409.43, dpiY=411.89, group=0}
+     {id=1, hwcId=36, width=1080, height=2400, refreshRate=90.00fps, dpiX=409.43, dpiY=411.89, group=0}
+   deviceProductInfo={name=Common Panel, manufacturerPnpId=GGL, productId=0, manufactureWeek=1, manufactureYear=1990, relativeAddress=[]}
+   Composition Display State: ["Common Panel"]
+   isVirtual=false DisplayId=4619827677550801152 
+   isEnabled=false isSecure=true usesClientComposition=false usesDeviceComposition=true flipClientTarget=false reusedClientComposition=false layerStack=4294967295 layerStackInternal=true 
+   transform (ROT_0) (IDENTITY)
+ 
+   layerStackSpace=ProjectionSpace(bounds = Rect(0, 0, 1080, 2400), content = Rect(0, 0, 1080, 2400), orientation = ROTATION_0) 
+   framebufferSpace=ProjectionSpace(bounds = Rect(0, 0, 1080, 2400), content = Rect(0, 0, 1080, 2400), orientation = ROTATION_0) 
+   orientedDisplaySpace=ProjectionSpace(bounds = Rect(0, 0, 1080, 2400), content = Rect(0, 0, 1080, 2400), orientation = ROTATION_0) 
+   displaySpace=ProjectionSpace(bounds = Rect(0, 0, 1080, 2400), content = Rect(0, 0, 1080, 2400), orientation = ROTATION_0) 
+   needsFiltering=false 
+   colorMode=DISPLAY_P3 (9) renderIntent=ENHANCE (1) dataspace=DISPLAY_P3 (143261696) colorTransformMatrix=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]]target dataspace=DISPLAY_P3 (143261696) 
+   Composition Display Color State:
+   HWC Support: wideColorGamut=true hdr10plus=true hdr10=true hlg=true dv=false metadata=7 
+   Composition RenderSurface State:
+   size=[1080 2400] ANativeWindow=0xb40000707e491330 (format 1) flips=19821 
+  FramebufferSurface: dataspace: Default(0)
+   mAbandoned=0
+   - BufferQueue mMaxAcquiredBufferCount=2 mMaxDequeuedBufferCount=1
+     mDequeueBufferCannotBlock=0 mAsyncMode=0
+     mQueueBufferCanDrop=0 mLegacyBufferDrop=1
+     default-size=[1080x2400] default-format=1      transform-hint=00 frame-counter=2166
+     mTransformHintInUse=00 mAutoPrerotation=0
+   FIFO(0):
+   (mConsumerName=FramebufferSurface, mConnectedApi=1, mConsumerUsageBits=6656, mId=1f100000000, producer=[501:???], consumer=[497:/system/bin/surfaceflinger])
+   Slots:
+    >[00:0xb400006fae475a50] state=ACQUIRED 0xb400006fbe46ac10 frame=2166 [1080x2400:1088,  1]
+     [02:0xb400006fae4778b0] state=FREE     0xb400006fbe469e50 frame=2164 [1080x2400:1088,  1]
+     [01:0xb400006fae475b70] state=FREE     0xb400006fbe46b190 frame=2165 [1080x2400:1088,  1]
+
+   6 Layers
+  - Output Layer 0xb40000701e563a10(Wallpaper BBQ wrapper#0)
+        Region visibleRegion (this=0xb40000701e563a28, count=1)
+    [-53, -119, 2322, 2520]
+        Region visibleNonTransparentRegion (this=0xb40000701e563a90, count=1)
+    [-53, -119, 2322, 2520]
+        Region coveredRegion (this=0xb40000701e563af8, count=1)
+    [  0,   0, 1080, 2400]
+        Region output visibleRegion (this=0xb40000701e563b60, count=1)
+    [  0,   0, 1080, 2400]
+        Region shadowRegion (this=0xb40000701e563bc8, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1080 2400] sourceCrop=[21.000000 47.000000 440.000000 977.000000] bufferTransform=0 (0) dataspace=UNKNOWN (0) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e563cb0, count=1)
+    [  0,   0,   0,   0]
+ override visible region=  Region  (this=0xb40000701e563d18, count=1)
+    [-53, -119, 2322, 2520]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb1900 composition=DEVICE (2) 
+  - Output Layer 0xb40000701e55f890(StatusBar#0)
+        Region visibleRegion (this=0xb40000701e55f8a8, count=1)
+    [  0,   0, 1080, 118]
+        Region visibleNonTransparentRegion (this=0xb40000701e55f910, count=1)
+    [  0,   0, 1080, 118]
+        Region coveredRegion (this=0xb40000701e55f978, count=1)
+    [  0,   0, 1080, 118]
+        Region output visibleRegion (this=0xb40000701e55f9e0, count=1)
+    [  0,   0, 1080, 118]
+        Region shadowRegion (this=0xb40000701e55fa48, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1080 118] sourceCrop=[0.000000 0.000000 1080.000000 118.000000] bufferTransform=0 (0) dataspace=DISPLAY_P3 (143261696) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e55fb30, count=1)
+    [  0,   0,   0,   0]
+ override visible region=  Region  (this=0xb40000701e55fb98, count=1)
+    [  0,   0, 1080, 118]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb3190 composition=DEVICE (2) 
+  - Output Layer 0xb40000701e55e000(NotificationShade#0)
+        Region visibleRegion (this=0xb40000701e55e018, count=1)
+    [  0,   0, 1080, 2400]
+        Region visibleNonTransparentRegion (this=0xb40000701e55e080, count=1)
+    [  0,   0, 1080, 2400]
+        Region coveredRegion (this=0xb40000701e55e0e8, count=1)
+    [  0,   0, 1080, 2400]
+        Region output visibleRegion (this=0xb40000701e55e150, count=1)
+    [  0,   0, 1080, 2400]
+        Region shadowRegion (this=0xb40000701e55e1b8, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1080 2400] sourceCrop=[0.000000 0.000000 1080.000000 2400.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e55e2a0, count=1)
+    [  0,   0,   0,   0]
+ override visible region=  Region  (this=0xb40000701e55e308, count=1)
+    [  0,   0, 1080, 2400]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb4a20 composition=DEVICE (2) 
+  - Output Layer 0xb40000701e5600c0(ColorFade BLAST#0)
+        Region visibleRegion (this=0xb40000701e5600d8, count=1)
+    [  0,   0, 1080, 2400]
+        Region visibleNonTransparentRegion (this=0xb40000701e560140, count=1)
+    [  0,   0, 1080, 2400]
+        Region coveredRegion (this=0xb40000701e5601a8, count=2)
+    [  0,   0, 1080, 124]
+    [  0, 2276, 1080, 2400]
+        Region output visibleRegion (this=0xb40000701e560210, count=1)
+    [  0,   0, 1080, 2400]
+        Region shadowRegion (this=0xb40000701e560278, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1080 2400] sourceCrop=[0.000000 0.000000 1080.000000 2400.000000] bufferTransform=0 (0) dataspace=DISPLAY_P3 (143261696) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e560360, count=1)
+    [  0,   0,  -1,  -1]
+ override visible region=  Region  (this=0xb40000701e5603c8, count=1)
+    [  0,   0,   0,   0]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb41f0 composition=DEVICE (2) 
+  - Output Layer 0xb40000701e559650(ScreenDecorOverlay#0)
+        Region visibleRegion (this=0xb40000701e559668, count=1)
+    [  0,   0, 1080, 124]
+        Region visibleNonTransparentRegion (this=0xb40000701e5596d0, count=1)
+    [  0,   0, 1080, 124]
+        Region coveredRegion (this=0xb40000701e559738, count=1)
+    [  0,   0,   0,   0]
+        Region output visibleRegion (this=0xb40000701e5597a0, count=1)
+    [  0,   0, 1080, 124]
+        Region shadowRegion (this=0xb40000701e559808, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1080 124] sourceCrop=[0.000000 0.000000 1080.000000 124.000000] bufferTransform=0 (0) dataspace=DISPLAY_P3 (143261696) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e5598f0, count=1)
+    [  0,   0,   0,   0]
+ override visible region=  Region  (this=0xb40000701e559958, count=1)
+    [  0,   0, 1080, 124]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb2960 composition=DEVICE (2) 
+  - Output Layer 0xb40000701e561950(ScreenDecorOverlayBottom#0)
+        Region visibleRegion (this=0xb40000701e561968, count=1)
+    [  0, 2276, 1080, 2400]
+        Region visibleNonTransparentRegion (this=0xb40000701e5619d0, count=1)
+    [  0, 2276, 1080, 2400]
+        Region coveredRegion (this=0xb40000701e561a38, count=1)
+    [  0,   0,   0,   0]
+        Region output visibleRegion (this=0xb40000701e561aa0, count=1)
+    [  0, 2276, 1080, 2400]
+        Region shadowRegion (this=0xb40000701e561b08, count=1)
+    [  0,   0,   0,   0]
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 2276 1080 2400] sourceCrop=[0.000000 0.000000 1080.000000 124.000000] bufferTransform=0 (0) dataspace=DISPLAY_P3 (143261696) override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace(bounds = Rect(0, 0, -1, -1), content = Rect(0, 0, -1, -1), orientation = ROTATION_0) override damage region=  Region  (this=0xb40000701e561bf0, count=1)
+    [  0,   0,   0,   0]
+ override visible region=  Region  (this=0xb40000701e561c58, count=1)
+    [  0, 2276, 1080, 2400]
+ override peekThroughLayer=0x0 override disableBackgroundBlur=false 
+      hwc: layer=0x08b400007778cb08a0 composition=DEVICE (2) 
+DesiredDisplayModeSpecs (DisplayManager): default mode ID: 1, allowGroupSwitching = 0, primary range: [90.00fps 90.00fps], app request range: [0.00fps 90.00fps]
+
+Current mode: {id=1, hwcId=36, fps=90.00, width=1080, height=2400 group=0}
+Refresh rates:
+	{id=1, hwcId=36, fps=90.00, width=1080, height=2400 group=0}
+	{id=0, hwcId=35, fps=60.00, width=1080, height=2400 group=0}
+Supports Frame Rate Override: no
+Idle timer: (platform) 1500 ms
+
+
+SurfaceFlinger global state:
+
+ ------------RE-----------------
+EGL implementation : 1.4 Android META-EGL
+EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_frame_timestamps EGL_ANDROID_get_native_client_buffer EGL_ANDROID_presentation_time EGL_EXT_surface_CTA861_3_metadata EGL_EXT_surface_SMPTE2086_metadata EGL_KHR_get_all_proc_addresses EGL_KHR_swap_buffers_with_damage EGL_EXT_gl_colorspace_scrgb EGL_EXT_gl_colorspace_scrgb_linear EGL_EXT_gl_colorspace_display_p3_linear EGL_EXT_gl_colorspace_display_p3 EGL_EXT_gl_colorspace_display_p3_passthrough EGL_EXT_gl_colorspace_bt2020_linear EGL_EXT_gl_colorspace_bt2020_pq EGL_ANDROID_image_native_buffer EGL_ANDROID_native_fence_sync EGL_ANDROID_recordable EGL_EXT_create_context_robustness EGL_EXT_image_gl_colorspace EGL_EXT_pixel_format_float EGL_EXT_protected_content EGL_EXT_yuv_surface EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_mutable_render_buffer EGL_KHR_no_config_context EGL_KHR_partial_update EGL_KHR_surfaceless_context EGL_KHR_wait_sync EGL_NV_context_priority_realtime 
+GLES: ARM, Mali-G78, OpenGL ES 3.2 v1.r32p1-00pxl1.91cf2c0501811420b32eb1830bd820dd
+GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_EXT_texture_compression_astc_decode_mode GL_EXT_texture_compression_astc_decode_mode_rgb9e5 GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisampled_render_to_texture GL_EXT_multisampled_render_to_texture2 GL_OES_surfaceless_context GL_OES_texture_stencil8 GL_EXT_shader_pixel_local_storage GL_ARM_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_ARM_mali_program_binary GL_EXT_sRGB GL_EXT_sRGB_write_control GL_EXT_texture_sRGB_decode GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OES_texture_storage_multisample_2d_array GL_OES_shader_image_atomic GL_EXT_robustness GL_EXT_draw_buffers_indexed GL_OES_draw_buffers_indexed GL_EXT_texture_border_clamp GL_OES_texture_border_clamp GL_EXT_texture_cube_map_array GL_OES_texture_cube_map_array GL_OES_sample_variables GL_OES_sample_shading GL_OES_shader_multisample_interpolation GL_EXT_shader_io_blocks GL_OES_shader_io_blocks GL_EXT_tessellation_shader GL_OES_tessellation_shader GL_EXT_primitive_bounding_box GL_OES_primitive_bounding_box GL_EXT_geometry_shader GL_OES_geometry_shader GL_ANDROID_extension_pack_es31a GL_EXT_gpu_shader5 GL_OES_gpu_shader5 GL_EXT_texture_buffer GL_OES_texture_buffer GL_EXT_copy_image GL_OES_copy_image GL_EXT_shader_non_constant_global_initializers GL_EXT_color_buffer_half_float GL_EXT_unpack_subimage GL_EXT_color_buffer_float GL_EXT_float_blend GL_EXT_YUV_target GL_OVR_multiview GL_OVR_multiview2 GL_OVR_multiview_multisampled_render_to_texture GL_KHR_robustness GL_KHR_robust_buffer_access_behavior GL_EXT_draw_elements_base_vertex GL_OES_draw_elements_base_vertex GL_EXT_protected_textures GL_EXT_buffer_storage GL_EXT_external_buffer GL_EXT_EGL_image_array GL_EXT_texture_filter_anisotropic GL_OES_texture_float_linear GL_ARM_texture_unnormalized_coordinates GL_EXT_shader_framebuffer_fetch GL_EXT_clip_control 
+RenderEngine supports protected context: 1
+RenderEngine is in protected context: 0
+RenderEngine shaders cached since last dump/primeCache: 0
+Skia CPU Caches:  0 bytes, 0.00 bytes (0.00 bytes is purgeable)
+Skia's GPU Caches:  11666228 bytes, 11.13 MB (11.13 MB is purgeable)
+  Texture/RenderBuffer: 11.12 MB (3 entries)
+    skia/gpu_resources/resource_247/texture_renderbuffer: size[632.81 KB] purgeable_size[632.81 KB] type[RenderTarget] category[Scratch]
+    skia/gpu_resources/resource_246/texture_renderbuffer: size[9.89 MB] purgeable_size[9.89 MB] type[RenderTarget] category[Scratch]
+    skia/gpu_resources/resource_255/texture_renderbuffer: size[632.81 KB] purgeable_size[632.81 KB] type[RenderTarget] category[Scratch]
+  Texture: 128.00 bytes (1 entry)
+    skia/gpu_resources/resource_7/texture: size[128.00 bytes] type[Texture] category[Scratch]
+  Other: 2.05 KB (2 entries)
+    skia/gpu_resources/resource_3: size[180.00 bytes] purgeable_size[180.00 bytes] type[Buffer Object] category[Other]
+    skia/gpu_resources/resource_4: size[1.88 KB] purgeable_size[1.88 KB] type[Buffer Object] category[Other]
+Skia's Wrapped Objects:
+  Texture/RenderBuffer: 59.33 MB (6 entries)
+    skia/gpu_resources/resource_200/texture_renderbuffer: size[9.89 MB]
+    skia/gpu_resources/resource_194/texture_renderbuffer: size[9.89 MB]
+    skia/gpu_resources/resource_191/texture_renderbuffer: size[9.89 MB]
+    skia/gpu_resources/resource_180/texture_renderbuffer: size[9.89 MB]
+    skia/gpu_resources/resource_178/texture_renderbuffer: size[9.89 MB]
+    skia/gpu_resources/resource_182/texture_renderbuffer: size[9.89 MB]
+RenderEngine tracked buffers: 30
+Dumping buffer ids...
+- 0x5b50000005c - 1 refs 
+- 0x728000000dd - 1 refs 
+- 0x728000000de - 1 refs 
+- 0x728000000df - 1 refs 
+- 0x728000000e0 - 1 refs 
+- 0x1f10000012e - 1 refs 
+- 0x72800000017 - 1 refs 
+- 0x72800000018 - 1 refs 
+- 0x72800000009 - 1 refs 
+- 0x72800000019 - 1 refs 
+- 0x7280000000a - 1 refs 
+- 0x72800000003 - 1 refs 
+- 0x1f100000002 - 1 refs 
+- 0x72800000002 - 1 refs 
+- 0x1f100000001 - 1 refs 
+- 0x7280000000c - 1 refs 
+- 0x72800000001 - 1 refs 
+- 0x1f100000000 - 1 refs 
+- 0x7280000000b - 1 refs 
+- 0x1f100000004 - 1 refs 
+- 0x72800000005 - 1 refs 
+- 0x72800000006 - 1 refs 
+- 0x1f100000006 - 1 refs 
+- 0x72800000007 - 1 refs 
+- 0x7280000001a - 1 refs 
+- 0x87700000080 - 1 refs 
+- 0x72800000004 - 1 refs 
+- 0x72800000000 - 1 refs 
+- 0x72800000008 - 1 refs 
+- 0x1f100000007 - 1 refs 
+RenderEngine AHB/BackendTexture cache size: 30
+Dumping buffer ids...
+- 0x5b50000005c
+- 0x728000000dd
+- 0x728000000de
+- 0x728000000df
+- 0x728000000e0
+- 0x1f10000012e
+- 0x72800000017
+- 0x72800000018
+- 0x72800000009
+- 0x72800000019
+- 0x7280000000a
+- 0x72800000003
+- 0x1f100000002
+- 0x72800000002
+- 0x1f100000001
+- 0x7280000000c
+- 0x72800000001
+- 0x1f100000000
+- 0x7280000000b
+- 0x1f100000004
+- 0x72800000005
+- 0x72800000006
+- 0x1f100000006
+- 0x72800000007
+- 0x7280000001a
+- 0x87700000080
+- 0x72800000004
+- 0x72800000000
+- 0x72800000008
+- 0x1f100000007
+
+Skia's GPU Protected Caches:  0 bytes, 0.00 bytes (0.00 bytes is purgeable)
+Skia's Protected Wrapped Objects:
+
+RenderEngine runtime effects: 0
+
+ClientCache state:
+ Cache owner: 0xb400006f8e46ee90
+ Cache owner: 0xb400006f8e46f310
+ Cache owner: 0xb400006f8e470450
+	 ID: 92, Width/Height: 1080,2400
+ Cache owner: 0xb400006f8e472610
+ Cache owner: 0xb400006f8e473a50
+ Cache owner: 0xb400006f8e474110
+	 ID: 0, Width/Height: 1080,124
+	 ID: 23, Width/Height: 1080,118
+	 ID: 11, Width/Height: 922,1024
+	 ID: 4, Width/Height: 1080,124
+	 ID: 3, Width/Height: 1080,124
+	 ID: 26, Width/Height: 1080,118
+	 ID: 7, Width/Height: 1080,124
+	 ID: 6, Width/Height: 1080,124
+	 ID: 2, Width/Height: 1080,124
+	 ID: 25, Width/Height: 1080,118
+	 ID: 5, Width/Height: 1080,124
+	 ID: 1, Width/Height: 1080,124
+	 ID: 24, Width/Height: 1080,118
+	 ID: 12, Width/Height: 1080,126
+	 ID: 10, Width/Height: 1080,126
+	 ID: 9, Width/Height: 1080,126
+	 ID: 8, Width/Height: 1080,126
+	 ID: 302, Width/Height: 1080,2400
+	 ID: 221, Width/Height: 1080,2400
+	 ID: 224, Width/Height: 1080,2400
+	 ID: 223, Width/Height: 1080,2400
+	 ID: 222, Width/Height: 1080,2400
+  Region undefinedRegion (this=0xb400006fee474ad8, count=1)
+    [  0,   0, 1080, 2400]
+  orientation=ROTATION_0, isPoweredOn=0
+  transaction-flags         : 00000000
+  gpu_to_cpu_unsupported    : 0
+  refresh-rate              : 90.00fps
+  x-dpi                     : 409.43
+  y-dpi                     : 411.89
+  transaction time: 0.000000 us
+Tracing state: disabled
+
+Display 4619827677550801152 (active) HWC layers:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Layer name
+           Z |  Window Type |  Comp Type |  Transform |   Disp Frame (LTRB) |          Source Crop (LTRB) |     Frame Rate (Explicit) (Seamlessness) [Focused]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Wallpaper BBQ wrapper#0
+  rel      0 |         2013 |     DEVICE |          0 |    0    0 1080 2400 |   21.0   47.0  440.0  977.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ StatusBar#0
+  rel      0 |         2000 |     DEVICE |          0 |    0    0 1080  118 |    0.0    0.0 1080.0  118.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ NotificationShade#0
+  rel      0 |         2040 |     DEVICE |          0 |    0    0 1080 2400 |    0.0    0.0 1080.0 2400.0 |                                              [*]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ColorFade BLAST#0
+  rel      0 |            0 |     DEVICE |          0 |    0    0 1080 2400 |    0.0    0.0 1080.0 2400.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ScreenDecorOverlay#0
+  rel      0 |         2024 |     DEVICE |          0 |    0    0 1080  124 |    0.0    0.0 1080.0  124.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ScreenDecorOverlayBottom#0
+  rel      0 |         2024 |     DEVICE |          0 |    0 2276 1080 2400 |    0.0    0.0 1080.0  124.0 |                                              [ ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Planner info for display [Common Panel]
+  Current layers:
+  + Fingerprint 02999b1edf696abd, last update 3 min 15.113 sec ago, age 39
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [Wallpaper BBQ wrapper#0]
+    Buffer 0xb400006fae487150    Protected [false]
+    Creation cost: 0
+    Display cost: 2592000
+
+  + Fingerprint 969ae0132f45c743, last update 3 min 15.113 sec ago, age 39
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [StatusBar#0]
+    Buffer 0xb400006fae48d9f0    Protected [false]
+    Creation cost: 0
+    Display cost: 127440
+
+  + Fingerprint 4fc0edbb956b6d97, last update 3 min 15.113 sec ago, age 39
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [NotificationShade#0]
+    Buffer 0xb400006fae48fa90    Protected [false]
+    Creation cost: 0
+    Display cost: 2592000
+
+  + Fingerprint 4ffa94a629426d97, last update 3 min 14.680 sec ago, age 0
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [ColorFade BLAST#0]
+    Buffer 0xb400006fae491470    Protected [false]
+    Creation cost: 0
+    Display cost: 2592000
+
+  + Fingerprint 66b3eadc3778decf, last update 3 min 15.113 sec ago, age 39
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [ScreenDecorOverlay#0]
+    Buffer 0xb400006fae487270    Protected [false]
+    Creation cost: 0
+    Display cost: 133920
+
+  + Fingerprint 44302d56321f6a5f, last update 3 min 15.113 sec ago, age 39
+    Override buffer: 0x0
+    HolePunchLayer: 0x0
+    Layer [ScreenDecorOverlayBottom#0]
+    Buffer 0xb400006fae486df0    Protected [false]
+    Creation cost: 0
+    Display cost: 133920
+h/w composer state:
+  h/w composer enabled
+
+
+lastUeventTime(08:00:00.000) lastTimestamp(0)
+lastEnableVsyncTime(18:01:06.869)
+lastDisableVsyncTime(18:01:06.942)
+lastValidateTime(18:01:16.727)
+lastPresentTime(18:01:17.168)
+
+Resource Manager:
+[RGB Restrictions]
+HW-Node 1-1:
+    maxDownScale = 1, maxUpscale = 1
+    maxFullWidth = 8190, maxFullHeight = 8190
+    minFullWidth = 16, minFullHeight = 16
+    fullWidthAlign = 1, fullHeightAlign = 1
+    maxCropWidth = 4096, maxCropHeight = 4096
+    minCropWidth = 16, minCropHeight = 16
+    cropXAlign = 1, cropYAlign = 1
+    cropWidthAlign = 1, cropHeightAlign = 1
+
+HW-Node 1-2:
+Same as above
+
+HW-Node 6-1:
+    maxDownScale = 2, maxUpscale = 8
+    maxFullWidth = 8190, maxFullHeight = 8190
+    minFullWidth = 16, minFullHeight = 16
+    fullWidthAlign = 1, fullHeightAlign = 1
+    maxCropWidth = 4096, maxCropHeight = 4096
+    minCropWidth = 16, minCropHeight = 16
+    cropXAlign = 1, cropYAlign = 1
+    cropWidthAlign = 1, cropHeightAlign = 1
+
+HW-Node 6-2:
+Same as above
+
+HW-Node 8-1:
+    maxDownScale = 4, maxUpscale = 8
+    maxFullWidth = 8192, maxFullHeight = 8192
+    minFullWidth = 1, minFullHeight = 1
+    fullWidthAlign = 1, fullHeightAlign = 1
+    maxCropWidth = 8192, maxCropHeight = 8192
+    minCropWidth = 1, minCropHeight = 1
+    cropXAlign = 1, cropYAlign = 1
+    cropWidthAlign = 1, cropHeightAlign = 1
+
+HW-Node 8-2:
+Same as above
+
+[YUV Restrictions]
+HW-Node 1-1:
+    maxDownScale = 1, maxUpscale = 1
+    maxFullWidth = 8190, maxFullHeight = 8190
+    minFullWidth = 16, minFullHeight = 16
+    fullWidthAlign = 2, fullHeightAlign = 2
+    maxCropWidth = 4096, maxCropHeight = 4096
+    minCropWidth = 32, minCropHeight = 32
+    cropXAlign = 2, cropYAlign = 2
+    cropWidthAlign = 2, cropHeightAlign = 2
+
+HW-Node 1-2:
+Same as above
+
+HW-Node 6-1:
+    maxDownScale = 2, maxUpscale = 8
+    maxFullWidth = 8190, maxFullHeight = 8190
+    minFullWidth = 16, minFullHeight = 16
+    fullWidthAlign = 2, fullHeightAlign = 2
+    maxCropWidth = 4096, maxCropHeight = 4096
+    minCropWidth = 32, minCropHeight = 32
+    cropXAlign = 2, cropYAlign = 2
+    cropWidthAlign = 2, cropHeightAlign = 2
+
+HW-Node 6-2:
+Same as above
+
+HW-Node 8-1:
+    maxDownScale = 4, maxUpscale = 8
+    maxFullWidth = 8192, maxFullHeight = 8192
+    minFullWidth = 1, minFullHeight = 1
+    fullWidthAlign = 2, fullHeightAlign = 2
+    maxCropWidth = 8192, maxCropHeight = 8192
+    minCropWidth = 1, minCropHeight = 1
+    cropXAlign = 2, cropYAlign = 2
+    cropWidthAlign = 2, cropHeightAlign = 2
+
+HW-Node 8-2:
+Same as above
+
+[PrimaryDisplay] display information size: 1080 x 2400, vsyncState: 2, colorMode: 9, colorTransformHint: 0
+CompositionInfo (1)
+mHasCompositionLayer(0)
+	internal_format: 0x1, afbc: 1
+
+CompositionInfo (2)
+mHasCompositionLayer(0)
+
+PanelGammaSource (0)
+
+============================== dump layers ===========================================
++--------+----------+--------------------+------------+------+--------------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |    format    | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+--------------+-----------+---------+-------+------------+-----+
+|   0    |    1     | 0xb400007718cb81b0 | 39, 40, -1 |  1   | RGBA_1010102 |    0x0    |    0    |  0x2  |     1      |  0  |
++--------+----------+--------------------+------------+------+--------------+-----------+---------+-------+------------+-----+
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|    sourceCrop    |    dispFrame     | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 21, 47, 440, 977 | 0, 0, 1080, 2400 | 0x0 |      0      |  2   |     2      |      2       |     0x0     |      0x6040      |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x80000] [DPP_GF1: 0x80000] [DPP_GF2: 0x80000] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_VGRFS0
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 0, w: 1080, h: 2400, format: RGBA_8888
+	usageFlags: 0x40000000000b00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |  format   | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+|   1    |    1     | 0xb400007718cb3fb0 | 81, 84, -1 |  1   | RGBA_8888 | 0x88a0000 |    0    |  0x2  |     1      |  1  |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|   sourceCrop    |    dispFrame    | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 0, 0, 1080, 118 | 0, 0, 1080, 118 | 0x0 |      1      |  2   |     2      |      2       |     0x0     |      0x6042      |
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x0] [DPP_GF1: 0x0] [DPP_GF2: 0x0] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_GF0
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 0, w: 1080, h: 118, format: RGBA_8888
+	usageFlags: 0xb00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |  format   | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+|   2    |    1     | 0xb400007718cb5f50 | 62, 64, -1 |  1   | RGBA_8888 | 0x8810000 |    0    |  0x2  |     1      | 10  |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|    sourceCrop    |    dispFrame     | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 0, 0, 1080, 2400 | 0, 0, 1080, 2400 | 0x0 |      2      |  2   |     2      |      2       |     0x0     |      0x6042      |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x0] [DPP_GF1: 0x0] [DPP_GF2: 0x0] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_GF1
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 0, w: 1080, h: 2400, format: RGBA_8888
+	usageFlags: 0xb00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |  format   | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+|   3    |    1     | 0xb400007718cb8730 | 66, 78, -1 |  1   | RGBA_8888 | 0x88a0000 |    0    |  0x2  |     1      | 16  |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|    sourceCrop    |    dispFrame     | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 0, 0, 1080, 2400 | 0, 0, 1080, 2400 | 0x0 |      3      |  2   |     2      |      2       |     0x0     |      0x6042      |
++------------------+------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x0] [DPP_GF1: 0x0] [DPP_GF2: 0x0] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_GF2
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 0, w: 1080, h: 2400, format: RGBA_8888
+	usageFlags: 0x40000000000b00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |  format   | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+|   4    |    1     | 0xb400007718cb29b0 | 55, 58, -1 |  1   | RGBA_8888 | 0x88a0000 |    0    |  0x2  |     1      |  0  |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|   sourceCrop    |    dispFrame    | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 0, 0, 1080, 124 | 0, 0, 1080, 124 | 0x0 |      4      |  2   |     2      |      2       |     0x0     |      0x6042      |
++-----------------+-----------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x0] [DPP_GF1: 0x0] [DPP_GF2: 0x0] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_VGRFS1
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 0, w: 1080, h: 124, format: RGBA_8888
+	usageFlags: 0xb00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+| zOrder | priority |       handle       |     fd     | AFBC |  format   | dataSpace | colorTr | blend | planeAlpha | fps |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
+|   5    |    1     | 0xb400007718cb47f0 | 52, 53, -1 |  1   | RGBA_8888 | 0x88a0000 |    0    |  0x2  |     1      |  0  |
++--------+----------+--------------------+------------+------+-----------+-----------+---------+-------+------------+-----+
++-----------------+---------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+|   sourceCrop    |      dispFrame      | tr  | windowIndex | type | exynosType | validateType | overlayInfo | supportedMPPFlag |
++-----------------+---------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+| 0, 0, 1080, 124 | 0, 2276, 1080, 2400 | 0x0 |      5      |  2   |     2      |      2       |     0x0     |      0x6042      |
++-----------------+---------------------+-----+-------------+------+------------+--------------+-------------+------------------+
+MPPFlags for otfMPP
+[DPP_GF0: 0x0] [DPP_GF1: 0x0] [DPP_GF2: 0x0] [DPP_VGRFS0: 0x0] [DPP_VGRFS1: 0x0] [DPP_VGRFS2: 0x0] 
+MPPFlags for m2mMPP
+[G2D0-YUV_PRI: 0x80] [G2D0-YUV_PRI: 0x80] [G2D0-YUV_EXT: 0x80] [G2D0-RGB_PRI: 0x0] [G2D0-RGB_EXT: 0x0] 
+[G2D0-COMBO_VIR: 0x0] 
+acquireFence: -1
+	assignedMPP: DPP_VGRFS2
+	dump midImg
+	bufferHandle: 0x0, fullWidth: 1080, fullHeight: 2400, x: 0, y: 2276, w: 1080, h: 124, format: RGBA_8888
+	usageFlags: 0xb00, layerFlags: 0x       0, acquireFenceFd: -1, releaseFenceFd: -1
+	dataSpace(143261696), blending(2), transform(0x 0), afbc(0)
+
+Min idle refresh rate: 60
+Refresh rate delay: 1000000000ns
+GraphicBufferAllocator buffers:
+    Handle |        Size |     W (Stride) x H | Layers |   Format |      Usage | Requestor
+0xb400006fbe4682d0 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x     b00 | Planner
+0xb400006fbe469090 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x     b00 | Planner
+0xb400006fbe469e50 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x    1b00 | FramebufferSurface
+0xb400006fbe46ac10 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x    1b00 | FramebufferSurface
+0xb400006fbe46b190 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x    1b00 | FramebufferSurface
+0xb400006fbe46c630 | 10200.00 KiB | 1080 (1088) x 2400 |      1 |        1 | 0x     b00 | Planner
+Total allocated by GraphicBufferAllocator (estimate): 61200.00 KB
+Imported gralloc buffers:
++ name:ColorFade#14(BLAST Consumer)14, id:2147483648683, size:1e+04KiB, w/h:1080x2400, usage: 0x40000000000b00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[NotificationShade]#33(BLAST Consumer)33, id:2147483648677, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[NotificationShade]#33(BLAST Consumer)33, id:2147483648680, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[QuickstepLauncher]#15(BLAST Consumer)15, id:2147483648646, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[StatusBar]#5(BLAST Consumer)5, id:2147483648037, size:5.5e+02KiB, w/h:1080x118, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[NavigationBar0]#3(BLAST Consumer)3, id:2147483648021, size:5.5e+02KiB, w/h:1080x126, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:screenshot, id:2147483648631, size:1e+04KiB, w/h:1080x2400, usage: 0xb33, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x0, compressed: false
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10445056
++ name:ViewRootImpl[NavigationBar0]#3(BLAST Consumer)3, id:2147483648022, size:5.5e+02KiB, w/h:1080x126, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[NotificationShade]#33(BLAST Consumer)33, id:2147483648679, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[StatusBar]#5(BLAST Consumer)5, id:2147483648036, size:5.5e+02KiB, w/h:1080x118, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[StatusBar]#5(BLAST Consumer)5, id:2147483648038, size:5.5e+02KiB, w/h:1080x118, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[StatusBar]#5(BLAST Consumer)5, id:2147483648039, size:5.5e+02KiB, w/h:1080x118, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[ScreenDecorOverlayBottom]#1(BLAST Consumer)1, id:2147483648017, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:Planner, id:2147483648006, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[ScreenDecorOverlayBottom]#1(BLAST Consumer)1, id:2147483648018, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[ScreenDecorOverlayBottom]#1(BLAST Consumer)1, id:2147483648019, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[ScreenDecorOverlay]#0(BLAST Consumer)0, id:2147483648014, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[ScreenDecorOverlay]#0(BLAST Consumer)0, id:2147483648015, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[QuickstepLauncher]#15(BLAST Consumer)15, id:2147483648647, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[ScreenDecorOverlayBottom]#1(BLAST Consumer)1, id:2147483648020, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[ScreenDecorOverlay]#0(BLAST Consumer)0, id:2147483648016, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:ViewRootImpl[NotificationShade]#33(BLAST Consumer)33, id:2147483648678, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[ScreenDecorOverlay]#0(BLAST Consumer)0, id:2147483648013, size:5.5e+02KiB, w/h:1080x124, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:Wallpaper#2(BLAST Consumer)2, id:2147483648025, size:3.8e+03KiB, w/h:922x1024, usage: 0x40000000000b00, req fmt:43, fourcc/mod:808665665/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:928x1024, stride:3712 bytes, size:3860736
++ name:Planner, id:2147483648007, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[NavigationBar0]#3(BLAST Consumer)3, id:2147483648023, size:5.5e+02KiB, w/h:1080x126, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:FramebufferSurface, id:2147483648000, size:1e+04KiB, w/h:1080x2400, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:FramebufferSurface, id:2147483648002, size:1e+04KiB, w/h:1080x2400, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:ViewRootImpl[NavigationBar0]#3(BLAST Consumer)3, id:2147483648024, size:5.5e+02KiB, w/h:1080x126, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x128, stride:4352 bytes, size:566528
++ name:Planner, id:2147483648004, size:1e+04KiB, w/h:1080x2400, usage: 0xb00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
++ name:FramebufferSurface, id:2147483648001, size:1e+04KiB, w/h:1080x2400, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/576460752303423553, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1088x2400, stride:4352 bytes, size:10608896
+Total imported by gralloc: 1.6e+05KiB
+TimeStats miniDump:
+Number of layers currently being tracked is 0
+Number of layers in the stats pool is 0
+
++ ContainerLayer (Display 0 name="内置屏幕"#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000002, tr=[0.00, 0.00][0.00, 0.00]
+      parent=none
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowedMagnification:0:31#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Display 0 name="内置屏幕"#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (HideDisplayCutout:0:16#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHandedBackgroundPanel:0:1#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:0:16#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:0:1#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHandedBackgroundPanel:0:1#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:0:1#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:0:1#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:0:1#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:0:1#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WallpaperWindowToken{baa52b6 token=android.os.Binder@a1d5a51}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:0:1#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (3f62f15 com.android.systemui.ImageWallpaper#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[2.34, 0.00][0.00, 2.34]
+      parent=WallpaperWindowToken{baa52b6 token=android.os.Binder@a1d5a51}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (com.android.systemui.ImageWallpaper#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[2.34, 0.00][0.00, 2.34]
+      parent=3f62f15 com.android.systemui.ImageWallpaper#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={windowType:2013, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (Wallpaper BBQ wrapper#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [-53, -119, 2322, 2520]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=( 922,1024), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=RGBA_1010102, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000100, tr=[2.34, 0.00][0.00, 2.34]
+      parent=com.android.systemui.ImageWallpaper#0
+      zOrderRelativeOf=none
+      activeBuffer=[ 922x1024: 928,RGBA_1010102], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:10278728438, windowType:2013}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:2:16#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:0:16#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:2:14#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:2:16#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (DefaultTaskDisplayArea#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:2:14#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=1#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:1}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=465#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=1#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:465}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ActivityRecord{9d696b u0 com.android.launcher3/.uioverrides.QuickstepLauncher#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=465#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (5911d92 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{9d696b u0 com.android.launcher3/.uioverrides.QuickstepLauncher#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=4#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:4}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Dim layer#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=2147483647, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=1, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=4#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=3#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        2, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:3}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Dim layer#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=2147483647, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=1, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=3#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (splitScreenDividerAnchor#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=    30000, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=2#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=    30001, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:2}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=471#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=    30002, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:471}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Letterbox - top#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=       -1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0, 1080, 124], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=1, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{40bfaf1 u0 com.android.camera2/com.android.camera.CameraLauncher#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ActivityRecord{40bfaf1 u0 com.android.camera2/com.android.camera.CameraLauncher#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=471#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (5aa0310 com.android.camera2/com.android.camera.CameraLauncher#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,124), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{40bfaf1 u0 com.android.camera2/com.android.camera.CameraLauncher#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Task=472#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=    30003, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={taskId:472}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ActivityRecord{2f62d6f u0 com.android.settings/.Settings#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=472#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (d42feba com.android.settings/com.android.settings.Settings#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{2f62d6f u0 com.android.settings/.Settings#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ActivityRecord{f5e38d1 u0 com.android.settings/.SubSettings#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Task=472#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (f7169d4 com.android.settings/com.android.settings.SubSettings#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ActivityRecord{f5e38d1 u0 com.android.settings/.SubSettings#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Input Consumer recents_animation_input_consumer#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=2147483646, pos=(0,0), size=(  -1,  -1), crop=[  0,   0, 1080, 2400], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=DefaultTaskDisplayArea#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:3:14#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:2:14#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{9b98e25 android.os.BinderProxy@ff9df01}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:3:14#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (4a38316 ShellDropTarget#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{9b98e25 android.os.BinderProxy@ff9df01}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ImePlaceholder:15:16#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:2:16#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ImeContainer#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ImePlaceholder:15:16#0
+      zOrderRelativeOf=ImePlaceholder:15:16#0
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{8cdda8 android.os.Binder@1ec51cb}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ImeContainer#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Surface(name=e1e91ab InputMethod)/@0x63cb3a1 - animation-leash of insets_animation#1) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,124), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{8cdda8 android.os.Binder@1ec51cb}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (e1e91ab InputMethod#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,124), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Surface(name=e1e91ab InputMethod)/@0x63cb3a1 - animation-leash of insets_animation#1
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:17:17#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:17:17#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:17:17#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:17:17#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:17:17#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{d884db3 android.os.BinderProxy@578a4ed}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:17:17#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Surface(name=c7a2e9 StatusBar)/@0x796851b - animation-leash of insets_animation#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{d884db3 android.os.BinderProxy@578a4ed}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (c7a2e9 StatusBar#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Surface(name=c7a2e9 StatusBar)/@0x796851b - animation-leash of insets_animation#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (StatusBar#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1080, 118]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(1080, 118), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      parent=c7a2e9 StatusBar#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x 118:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:5823797027785, windowType:2000, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (HideDisplayCutout:18:18#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        2, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:18:18#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:18:18#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:18:18#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:18:18#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:18:18#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:18:18#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:19:19#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        3, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:19:19#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:19:19#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:19:19#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:19:19#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{f86966c android.os.BinderProxy@63f6be}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:19:19#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (17cad58 NotificationShade#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{f86966c android.os.BinderProxy@63f6be}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (NotificationShade#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1080, 2400]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(1080,2400), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=23, color=(0.000,0.000,0.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      parent=17cad58 NotificationShade#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x2400:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:5833090043333, windowType:2040, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (HideDisplayCutout:20:23#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        4, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:20:23#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:20:23#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:20:23#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:20:23#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:20:23#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:20:23#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:24:25#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        5, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{520fa0a android.os.BinderProxy@ae55dac}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:24:25#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ EffectLayer (Surface(name=8f5b27b NavigationBar0)/@0x58716b8 - animation-leash of insets_animation#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,2400), size=(  -1,  -1), crop=[  0,   0,   0,   0], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(-1.000,-1.000,-1.000,1.000), flags=0x00000001, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{520fa0a android.os.BinderProxy@ae55dac}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (8f5b27b NavigationBar0#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,2400), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Surface(name=8f5b27b NavigationBar0)/@0x58716b8 - animation-leash of insets_animation#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (NavigationBar0#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,2400), size=(1080, 126), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      parent=8f5b27b NavigationBar0#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x 126:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:5833217290037, windowType:2019, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{90cccf3 android.os.BinderProxy@4429362}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Leaf:24:25#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (7d77db0 pip-dismiss-overlay#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,1744), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{90cccf3 android.os.BinderProxy@4429362}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (HideDisplayCutout:26:31#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        6, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowedMagnification:0:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:26:31#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:26:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:26:27#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:26:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:26:27#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:26:27#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:28:28#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:26:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:29:31#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        2, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:26:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:29:31#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:29:31#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (HideDisplayCutout:32:35#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Display 0 name="内置屏幕"#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (OneHanded:32:35#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=HideDisplayCutout:32:35#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:32:32#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:32:35#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (FullscreenMagnification:33:35#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        1, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=OneHanded:32:35#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:33:35#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=FullscreenMagnification:33:35#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Leaf:36:36#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        2, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Display 0 name="内置屏幕"#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (Display Overlays#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=2147483647, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000002, tr=[0.00, 0.00][0.00, 0.00]
+      parent=Display 0 name="内置屏幕"#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (ColorFade#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=1073741825, pos=(0,0), size=(  -1,  -1), crop=[  0,   0, 1080, 2400], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=none
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (ColorFade BLAST#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1080, 2400]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(1080,2400), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=DCI-P3 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000100, tr=[0.00, 0.00][0.00, 0.00]
+      parent=ColorFade#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x2400:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:5833527843504}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{d25fec1 android.os.BinderProxy@4c953a8}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=1073741826, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=none
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (7127666 ScreenDecorOverlay#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{d25fec1 android.os.BinderProxy@4c953a8}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (ScreenDecorOverlay#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0,   0, 1080, 124]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,0), size=(1080, 124), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000140, tr=[0.00, 0.00][0.00, 0.00]
+      parent=7127666 ScreenDecorOverlay#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x 124:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:5245144384395, windowType:2024, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (WindowToken{ba8e4a android.os.BinderProxy@e5d47ec}#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=1073741826, pos=(0,0), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=none
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ ContainerLayer (e0551bb ScreenDecorOverlayBottom#0) uid=1000
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=0)
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,2276), size=(  -1,  -1), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=1, dataspace=Default, defaultPixelFormat=Unknown/None, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000000, tr=[0.00, 0.00][0.00, 0.00]
+      parent=WindowToken{ba8e4a android.os.BinderProxy@e5d47ec}#0
+      zOrderRelativeOf=none
+      activeBuffer=[   0x   0:   0,Unknown/None], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
++ BufferStateLayer (ScreenDecorOverlayBottom#0) uid=10090
+  Region TransparentRegion (this=0 count=0)
+  Region VisibleRegion (this=0 count=1)
+    [  0, 2276, 1080, 2400]
+  Region SurfaceDamageRegion (this=0 count=0)
+      layerStack=   0, z=        0, pos=(0,2276), size=(1080, 124), crop=[  0,   0,  -1,  -1], cornerRadius=0.000000, isProtected=0, isTrustedOverlay=0, isOpaque=0, invalidate=0, dataspace=BT709 sRGB Full range, defaultPixelFormat=RGBA_8888, backgroundBlurRadius=0, color=(0.000,0.000,0.000,1.000), flags=0x00000140, tr=[0.00, 0.00][0.00, 0.00]
+      parent=e0551bb ScreenDecorOverlayBottom#0
+      zOrderRelativeOf=none
+      activeBuffer=[1080x 124:1088,RGBA_8888], tr=[0.00, 0.00][0.00, 0.00] queued-frames=0, mRefreshPending=0, metadata={dequeueTime:26312952729, windowType:2024, ownerPID:1832, ownerUID:10090}, cornerRadiusCrop=[0.00, 0.00, 0.00, 0.00],  shadowRadius=0.000, 
+
+Offscreen Layers:
+Layer com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher#0 (BufferStateLayer) callingPid:1461 callingUid:1000 ownerUid:10084
+Layer Surface(name=Task=1)/@0xe56e678 - animation-leash of app_transition#0 (EffectLayer) callingPid:1461 callingUid:1000 ownerUid:1000
+Layer Surface(name=WallpaperWindowToken{baa52b6 token=android.os.Binder@a1d5a51})/@0xe08e151 - animation-leash of window_animation#0 (EffectLayer) callingPid:1461 callingUid:1000 ownerUid:1000
+Layer Surface(name=Task=472)/@0x46b89bd - animation-leash of app_transition#0 (EffectLayer) callingPid:1461 callingUid:1000 ownerUid:1000
+Layer Surface(name=e1e91ab InputMethod)/@0x63cb3a1 - animation-leash of insets_animation#0 (EffectLayer) callingPid:1461 callingUid:1000 ownerUid:1000
