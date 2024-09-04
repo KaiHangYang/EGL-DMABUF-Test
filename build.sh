@@ -1,3 +1,4 @@
+
 ANDROID_NDK_HOME=/home/faceunity/Programs/Android/NDK/android-ndk-r25c
 ANDROID_ABI="arm64-v8a"
 # DEBUG: for AHardwareBuffer_allocate

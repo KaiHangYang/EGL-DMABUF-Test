@@ -46,6 +46,10 @@ bool InitializeEGL() {
   const char *eglExtensions = eglQueryString(display, EGL_EXTENSIONS);
   MY_LOGI("EGL Extensions: %s", eglExtensions);
 
+  if (std::string(eglExtensions).find("EGL_EXT_image_dma_buf_import") == std::string::npos) {
+    MY_LOGI("EGL doesn't support \"EGL_EXT_image_dma_buf_import\" extension.");
+  }
+
   EGLint configAttribs[] = {EGL_RENDERABLE_TYPE,
                             EGL_OPENGL_ES2_BIT,
                             EGL_CONFORMANT,
